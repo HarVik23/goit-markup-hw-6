@@ -53,9 +53,20 @@ p {
   overflow: hidden;
 }
 .container {
-  width: 1158px;
+  max-width: 428px;
   margin: 0 auto;
   padding: 0 15px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
 }
 /**
   |============================
@@ -103,7 +114,7 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
-  display: flex;
+  display: none;
   align-items: center;
   gap: 40px;
   /* padding: 24px 0; */
@@ -143,12 +154,15 @@ p {
 .address {
   font-style: normal;
   margin-left: auto;
+  display: none;
 }
 .address-link:hover,
 .address-link:focus {
   color: var(--color-ocean);
 }
-
+.icon-menu-open {
+  stroke: #2e2f42;
+}
 .list-address {
   display: flex;
   align-items: center;
