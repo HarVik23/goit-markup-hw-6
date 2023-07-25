@@ -35,9 +35,9 @@ img {
   padding: 0;
   margin: 0;
 }
-a{
+/* a{
   text-decoration: none;
-}
+} */
 h1,
 h2,
 h3,
@@ -60,17 +60,19 @@ p {
 .container {
   max-width: 428px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 16px;
 }
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding: 0 16px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+    padding: 0 15px;
   }
 }
 /**
@@ -323,7 +325,11 @@ letter-spacing: 0.4px;
   .list-address {
     flex-direction: column;
   }
+  .list-nav {
+    font-weight: 500;
+  }
 }
+
 
 @media screen and (min-width: 1158px) {
   .logo-web {
@@ -336,6 +342,9 @@ letter-spacing: 0.4px;
   .address-link {
     font-size: 16px;
     line-height: 1.5;
+  }
+  .list-nav {
+    font-weight: 500;
   }
 }
 
@@ -600,7 +609,7 @@ letter-spacing: 0.4px;
 
 @media screen and (min-width: 1158px) {
   .image-section {
-    display: flex;
+    display: block;
   }
 }
 /**
@@ -768,7 +777,7 @@ letter-spacing: 0.4px;
 }
 @media screen and (min-width: 768px) {
   .customers-box {
-    width: 552px;
+    width: 584px;
   }
   .customers-list {
     display: flex;
@@ -825,7 +834,7 @@ letter-spacing: 0.4px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  max-width: 264px;
+  width: 264px;
 }
 .studio-footer {
   font-family: "Raleway", sans-serif;
@@ -862,8 +871,8 @@ letter-spacing: 0.4px;
   height: 40px;
 }
 .footer-link {
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   background-color: var(--color-iris);
   display: flex;
   justify-content: center;
@@ -988,7 +997,7 @@ text-align: center;
     display: flex;
     flex-wrap: wrap;
     gap: 72px 24px;
-    width: 552px;
+    width: 584px;
     justify-content: flex-start;
   }
   .web-footer {
@@ -1013,20 +1022,42 @@ text-align: center;
 
 @media screen and (min-width: 1158px) {
   .footer-box {
+    display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
-    width: 100%;
-    gap: 0;
-  }
+    
+   width: 100%;
+    gap: 0; 
+  
+}
   .footer-logo-box {
     margin-right: 120px;
     
   }
   .form-box {
-    width: 220px;
-    margin-left: 80px;
-    
+     /* width: 220px; */
+     margin-left: 80px; 
   }
+  /* .form-box {
+    margin-left: auto;
+  } */
+  /* .title-footer {
+    max-width: 264px;
+  } */
+    
+/* 
+  .footer {
+    padding: 100px 0;
+  
+  } */
+
+  /* .footer-form {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  } */
+
+  
 }
 
 /**
